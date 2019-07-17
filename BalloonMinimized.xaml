@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ShutdownTimer.BalloonMinimized"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ShutdownTimer"
+             mc:Ignorable="d" Height="70" Width="381.356">
+    <Grid MouseDown="Grid_MouseDown">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Content="Minimized to tray" Margin="75,5,-111,0" VerticalAlignment="Top" Height="60" FontSize="36" HorizontalAlignment="Left" Width="306"/>
+        <Image HorizontalAlignment="Right" Height="60" VerticalAlignment="Bottom" Width="60" Source="Resources/timer.ico" Margin="0,0,311,5"/>
+    </Grid>
+</UserControl>

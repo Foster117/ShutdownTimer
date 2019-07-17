@@ -1,0 +1,44 @@
+﻿<Window x:Class="ShutdownTimer.About_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShutdownTimer"
+        mc:Ignorable="d"
+        Title="About" Height="300" Width="400" Background="White" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"></RowDefinition>
+            <RowDefinition Height="29*"></RowDefinition>
+            <RowDefinition Height="29*"></RowDefinition>
+            <RowDefinition Height="74*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="31*"></RowDefinition>
+            <RowDefinition Height="44*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="pic_gmail" Grid.Column="1" HorizontalAlignment="Center" Height="60"  Width="60" Source="Resources/gmail_logo.png" VerticalAlignment="Center" Cursor="Hand" ToolTip="alexander.ulianov@gmail.com " MouseLeftButtonUp="Pic_gmail_MouseLeftButtonUp" />
+            <Image x:Name="pic_linkedin" Grid.Column="2" Height="60" Width="60" Source="Resources/linked_logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="Hand" ToolTip="www.linkedin.com/in/alexander-ulianov-419761a0/" MouseLeftButtonUp="Pic_linkedin_MouseLeftButtonUp"/>
+            <Image x:Name="pic_fb" Grid.Column="3" Height="60" Width="60" Source="Resources/fb_logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="Hand" ToolTip="www.facebook.com/foster117" MouseLeftButtonUp="Pic_fb_MouseLeftButtonUp"/>
+            <Image x:Name="pic_skype" Grid.Column="4" Height="60" Width="60" Source="Resources/Skype_logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="Hand" ToolTip="ulianov-alexander" MouseLeftButtonUp="Pic_skype_MouseLeftButtonUp" Margin="2.5,-1.5"/>
+        </Grid>
+
+
+        <Label Content="Shutdown Timer" Grid.Row="0" FontSize="30" FontWeight="Bold" FontFamily="Yu Gothic UI" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="236" Padding="5,5,5,0" VerticalContentAlignment="Bottom" Margin="79,-1,79,0"/>
+        <Label Content="version 1.1" Grid.Row="1"  FontSize="16" FontWeight="Bold" FontFamily="Yu Gothic UI" HorizontalAlignment="Center" VerticalAlignment="Top" Padding="5,1,5,5" HorizontalContentAlignment="Center" Width="108" Height="27" Margin="143,0" />
+        <Label Content="This application is free and distributed as is" FontSize="16" FontFamily="Yu Gothic UI" Grid.Row="5" HorizontalAlignment="Center"  Width="316" Margin="39,0"/>
+        <Label Content="by Alexander Ulianov" Grid.Row="1" FontSize="20" FontWeight="Bold" FontFamily="Yu Gothic UI" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="37" Margin="96,0,92,0" Grid.RowSpan="2" Width="206" />
+        <Button x:Name="closeButton" Content="Close" Grid.Row="6" Click="CloseButton_Click"></Button>
+
+    </Grid>
+</Window>
